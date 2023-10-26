@@ -15,6 +15,7 @@ export default function App() {
               className="source"
               href="https://github.com/alice4599/dictionary-app.git"
               target="_blank"
+              rel="noreferrer"
             >
               Open-source code
             </a>
