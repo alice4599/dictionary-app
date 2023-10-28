@@ -8,6 +8,7 @@ export default function Dictionary() {
   let [description, setDescribtion] = useState(null);
 
   function displayResponse(response) {
+    console.log(response.data);
     setDescribtion(response.data);
   }
 
@@ -24,6 +25,7 @@ export default function Dictionary() {
     <div className="Dictionary">
       <form onSubmit={search}>
         <input
+          className="searchbox"
           type="search"
           autoFocus={true}
           onChange={handleKeywordSearch}

@@ -19,6 +19,7 @@ export default function App() {
             >
               Open-source code
             </a>
+            <br />
             by Neli
           </div>
         </footer>

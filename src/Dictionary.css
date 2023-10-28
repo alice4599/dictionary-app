@@ -1,1 +1,13 @@
-
+form {
+  display: flex;
+  justify-content: center;
+}
+input {
+  border: none;
+  border-bottom: 2px solid blueviolet;
+  text-align: center;
+  font-size: 25px;
+}
+h2 {
+  font-size: 45px;
+}
