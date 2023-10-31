@@ -1,14 +1,33 @@
 form {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
+}
+.formTitle {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 input {
+  background-color: #f7f5ff;
   border: none;
   border-bottom: 2px solid blueviolet;
   outline: none;
   text-align: center;
   font-size: 25px;
 }
+.hint {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
 h2 {
   font-size: 45px;
+}
+.Dictionary section {
+  background-color: #f7f5ff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+  padding: 30px;
+  margin: 0 100px 30px 100px;
 }

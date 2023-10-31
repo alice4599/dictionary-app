@@ -1,19 +1,29 @@
 import React from "react";
 import Meaning from "./Meaning";
-
 import "./DescriptionNoun.css";
+import Card from "react-bootstrap/Card";
+import { CardBody, CardText, CardTitle } from "react-bootstrap";
 
 export default function DescriptionNoun(props) {
   if (props.results) {
     return (
       <div className="DescriptionNoun">
-        <h2 className="wordDisplay">{props.results.word}</h2>
-        <h3 className="phoneticDisplay">{props.results.phonetic}</h3>
+        <Card className="wordBox">
+          <CardBody>
+            <CardTitle>
+              <h2 className="wordDisplay">{props.results.word}</h2>
+            </CardTitle>
+            <CardText>
+              <h3 className="phoneticDisplay">{props.results.phonetic}</h3>
+            </CardText>
+          </CardBody>
+        </Card>
+
         {props.results.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
+            <section key={index}>
               <Meaning meaning={meaning} />
-            </div>
+            </section>
           );
         })}
       </div>
