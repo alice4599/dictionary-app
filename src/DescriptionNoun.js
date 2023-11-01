@@ -13,12 +13,11 @@ export default function DescriptionNoun(props) {
             <CardTitle>
               <h2 className="wordDisplay">{props.results.word}</h2>
             </CardTitle>
-            <CardText>
+            <div className="card-text">
               <h3 className="phoneticDisplay">{props.results.phonetic}</h3>
-            </CardText>
+            </div>
           </CardBody>
         </Card>
-
         {props.results.meanings.map(function (meaning, index) {
           return (
             <section key={index}>

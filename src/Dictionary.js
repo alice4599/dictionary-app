@@ -11,10 +11,17 @@ export default function Dictionary(props) {
   function displayResponse(response) {
     setDescribtion(response.data);
   }
+  function displayImage(response) {}
 
   function search() {
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=4dad04c3ca4f2774bb04900t8b93bo1f`;
     axios.get(apiUrl).then(displayResponse);
+
+    let pexelsApiKey =
+      "kRoNAnn3DK26oAu8cRgpvKQyQz2j5lNo9FOka82ADCuxCPR6GEG2WpDz";
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    axios.get(pexelsApiUrl, { headers: headers }).then(displayImage);
   }
 
   function displayWord(event) {
