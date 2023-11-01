@@ -2,7 +2,7 @@ import React from "react";
 import Meaning from "./Meaning";
 import "./DescriptionNoun.css";
 import Card from "react-bootstrap/Card";
-import { CardBody, CardText, CardTitle } from "react-bootstrap";
+import { CardBody, CardTitle } from "react-bootstrap";
 
 export default function DescriptionNoun(props) {
   if (props.results) {
