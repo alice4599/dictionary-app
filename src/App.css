@@ -1,15 +1,17 @@
 body {
-  background-color: #ae9bfe;
+  background-color: white;
 }
 .App {
   max-width: 960px;
   margin: 0 auto;
 }
 .container {
-  background-color: white;
+  background-color: rgb(226, 166, 166);
   border-radius: 10px;
 }
 .App-header {
+  color: white;
+  text-shadow: 1px 1px 2px black;
   text-align: center;
   font-family: poppins;
   font-size: 35px;
